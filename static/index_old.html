@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Attendance System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        
+        .main-content {
+            padding: 40px;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 30px;
+        }
+        
+        .tab {
+            padding: 15px 30px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1.1em;
+            color: #666;
+            transition: all 0.3s;
+        }
+        
+        .tab.active {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        video {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            max-width: 100%;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 5px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+        
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .status {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            margin-bottom: 15px;
+            transition: border 0.3s;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .attendance-list {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        .attendance-item {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .attendance-item:last-child {
+            border-bottom: none;
+        }
+        
+        .person-name {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .timestamp {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎭 Face Recognition Attendance</h1>
+            <p class="subtitle">Advanced AI-Powered Check-In System</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="tabs">
+                <button class="tab active" onclick="showTab('checkin')">Check-In</button>
+                <button class="tab" onclick="showTab('register')">Register</button>
+                <button class="tab" onclick="showTab('attendance')">Attendance</button>
+                <button class="tab" onclick="showTab('login')">Login</button>
+            </div>
+            
+            <!-- Check-In Tab -->
+            <div id="checkin" class="tab-content active">
+                <div class="card">
+                    <h2>Quick Check-In</h2>
+                    <p>Position your face in front of the camera and click capture</p>
+                    
+                    <div class="video-container">
+                        <video id="checkin-video" width="640" height="480" autoplay muted></video>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button class="btn btn-primary" onclick="startCheckinCamera()">Start Camera</button>
+                        <button class="btn btn-success" onclick="captureCheckin()">Capture & Check-In</button>
+                    </div>
+                    
+                    <div id="checkin-status"></div>
+                </div>
+            </div>
+            
+            <!-- Register Tab -->
+            <div id="register" class="tab-content">
+                <div class="card">
+                    <h2>Register New Person</h2>
+                    <p>Requires admin login. We'll capture 3 frames for best accuracy.</p>
+                    
+                    <input type="text" id="person-name" placeholder="Enter full name">
+                    
+                    <div class="video-container">
+                        <video id="register-video" width="640" height="480" autoplay muted></video>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button class="btn btn-primary" onclick="startRegisterCamera()">Start Camera</button>
+                        <button class="btn btn-success" onclick="captureRegister()">Capture 3 Frames & Register</button>
+                    </div>
+                    
+                    <div id="register-status"></div>
+                </div>
+            </div>
+            
+            <!-- Attendance Tab -->
+            <div id="attendance" class="tab-content">
+                <div class="card">
+                    <h2>Recent Attendance Records</h2>
+                    <button class="btn btn-primary" onclick="loadAttendance()">Refresh</button>
+                    
+                    <div id="attendance-list" class="attendance-list"></div>
+                </div>
+            </div>
+            
+            <!-- Login Tab -->
+            <div id="login" class="tab-content">
+                <div class="card">
+                    <h2>Admin Login</h2>
+                    
+                    <input type="text" id="login-username" placeholder="Username">
+                    <input type="password" id="login-password" placeholder="Password">
+                    
+                    <button class="btn btn-primary" onclick="login()">Login</button>
+                    
+                    <div id="login-status"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const API_URL = 'http://localhost:8000';
+        let token = localStorage.getItem('token');
+        let checkinStream = null;
+        let registerStream = null;
+        
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+        
+        async function startCheckinCamera() {
+            try {
+                checkinStream = await navigator.mediaDevices.getUserMedia({ 
+                    video: { width: 640, height: 480 } 
+                });
+                document.getElementById('checkin-video').srcObject = checkinStream;
+                showStatus('checkin-status', 'Camera ready! Position your face and click Capture.', 'info');
+            } catch (err) {
+                showStatus('checkin-status', 'Camera access denied: ' + err.message, 'error');
+            }
+        }
+        
+        async function captureCheckin() {
+            const video = document.getElementById('checkin-video');
+            const canvas = document.createElement('canvas');
+            canvas.width = video.videoWidth || 640;
+            canvas.height = video.videoHeight || 480;
+            canvas.getContext('2d').drawImage(video, 0, 0);
+            
+            const imageData = canvas.toDataURL('image/jpeg', 0.8);
+            
+            showStatus('checkin-status', 'Processing...', 'info');
+            
+            try {
+                const response = await fetch(`${API_URL}/api/recognition/checkin`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ image: imageData })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showStatus('checkin-status', '✓ ' + data.message, 'success');
+                } else {
+                    showStatus('checkin-status', data.message, 'error');
+                }
+            } catch (err) {
+                showStatus('checkin-status', 'Error: ' + err.message, 'error');
+            }
+        }
+        
+        async function startRegisterCamera() {
+            try {
+                registerStream = await navigator.mediaDevices.getUserMedia({ 
+                    video: { width: 640, height: 480 } 
+                });
+                document.getElementById('register-video').srcObject = registerStream;
+                showStatus('register-status', 'Camera ready!', 'info');
+            } catch (err) {
+                showStatus('register-status', 'Camera access denied: ' + err.message, 'error');
+            }
+        }
+        
+        async function captureRegister() {
+            const name = document.getElementById('person-name').value.trim();
+            if (!name) {
+                showStatus('register-status', 'Please enter a name', 'error');
+                return;
+            }
+            
+            if (!token) {
+                showStatus('register-status', 'Please login first', 'error');
+                return;
+            }
+            
+            const video = document.getElementById('register-video');
+            const frames = [];
+            
+            showStatus('register-status', 'Capturing frames...', 'info');
+            
+            for (let i = 0; i < 3; i++) {
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                
+                const canvas = document.createElement('canvas');
+                canvas.width = video.videoWidth || 640;
+                canvas.height = video.videoHeight || 480;
+                canvas.getContext('2d').drawImage(video, 0, 0);
+                frames.push(canvas.toDataURL('image/jpeg', 0.8));
+                
+                showStatus('register-status', `Captured frame ${i + 1}/3`, 'info');
+            }
+            
+            showStatus('register-status', 'Processing...', 'info');
+            
+            try {
+                const response = await fetch(`${API_URL}/api/recognition/add-person`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({ name, frames })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showStatus('register-status', '✓ ' + data.message, 'success');
+                    document.getElementById('person-name').value = '';
+                } else {
+                    showStatus('register-status', data.detail || 'Registration failed', 'error');
+                }
+            } catch (err) {
+                showStatus('register-status', 'Error: ' + err.message, 'error');
+            }
+        }
+        
+        async function login() {
+            const username = document.getElementById('login-username').value;
+            const password = document.getElementById('login-password').value;
+            
+            if (!username || !password) {
+                showStatus('login-status', 'Please enter username and password', 'error');
+                return;
+            }
+            
+            try {
+                const formData = new URLSearchParams();
+                formData.append('username', username);
+                formData.append('password', password);
+                
+                const response = await fetch(`${API_URL}/api/auth/login`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    token = data.access_token;
+                    localStorage.setItem('token', token);
+                    showStatus('login-status', '✓ Login successful!', 'success');
+                } else {
+                    showStatus('login-status', data.detail || 'Login failed', 'error');
+                }
+            } catch (err) {
+                showStatus('login-status', 'Error: ' + err.message, 'error');
+            }
+        }
+        
+        async function loadAttendance() {
+            if (!token) {
+                document.getElementById('attendance-list').innerHTML = 
+                    '<div class="status error">Please login to view attendance records</div>';
+                return;
+            }
+            
+            document.getElementById('attendance-list').innerHTML = '<div class="loader"></div>';
+            
+            try {
+                const response = await fetch(`${API_URL}/api/recognition/attendance?limit=50`, {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+                
+                const records = await response.json();
+                
+                if (records.length === 0) {
+                    document.getElementById('attendance-list').innerHTML = 
+                        '<div class="status info">No attendance records found</div>';
+                    return;
+                }
+                
+                let html = '';
+                records.forEach(record => {
+                    const date = new Date(record.timestamp);
+                    html += `
+                        <div class="attendance-item">
+                            <div>
+                                <div class="person-name">${record.person_name}</div>
+                                <div class="timestamp">${date.toLocaleString()}</div>
+                            </div>
+                            <div>
+                                ${record.confidence_score ? 
+                                    `<span style="color: #28a745;">${(record.confidence_score * 100).toFixed(1)}%</span>` : 
+                                    ''
+                                }
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                document.getElementById('attendance-list').innerHTML = html;
+            } catch (err) {
+                document.getElementById('attendance-list').innerHTML = 
+                    `<div class="status error">Error loading attendance: ${err.message}</div>`;
+            }
+        }
+        
+        function showStatus(elementId, message, type) {
+            const element = document.getElementById(elementId);
+            element.innerHTML = `<div class="status ${type}">${message}</div>`;
+        }
+    </script>
+</body>
+</html>

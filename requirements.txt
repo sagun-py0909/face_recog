@@ -1,8 +1,33 @@
+# Core dependencies
 numpy
 opencv-python
 tensorflow
 keras-facenet
+scikit-learn
+
+# Web framework
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Database
 sqlalchemy
 psycopg2-binary
+alembic
+
+# Caching
+redis
+hiredis
+
+# Authentication
+python-jose[cryptography]
+passlib[bcrypt]
+python-dotenv
+
+# Settings management
+pydantic-settings
+
+# Legacy (keep for backward compatibility)
+flask
 scipy
 pandas

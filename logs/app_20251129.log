@@ -1,0 +1,48 @@
+2025-11-29 01:42:21 - face_recog - INFO - ============================================================
+2025-11-29 01:42:21 - face_recog - INFO - ============================================================
+2025-11-29 01:42:21 - face_recog - INFO - ============================================================
+2025-11-29 01:42:21 - face_recog - INFO - ============================================================
+2025-11-29 01:42:22 - face_recog - INFO - Request: GET /docs - Client: 127.0.0.1
+2025-11-29 01:42:22 - face_recog - INFO - Response: GET /docs - Status: 404 - Duration: 0.000s
+2025-11-29 01:43:20 - face_recog - INFO - ============================================================
+2025-11-29 01:43:20 - face_recog - INFO - ============================================================
+2025-11-29 01:43:20 - face_recog - INFO - ============================================================
+2025-11-29 01:43:20 - face_recog - INFO - ============================================================
+2025-11-29 01:43:20 - face_recog - INFO - Request: GET /docs - Client: 127.0.0.1
+2025-11-29 01:43:20 - face_recog - INFO - Response: GET /docs - Status: 404 - Duration: 0.002s
+2025-11-29 01:43:20 - face_recog - INFO - Request: GET /.well-known/appspecific/com.chrome.devtools.json - Client: 127.0.0.1
+2025-11-29 01:43:20 - face_recog - INFO - Response: GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.003s
+2025-11-29 01:43:20 - face_recog - INFO - Request: GET /favicon.ico - Client: 127.0.0.1
+2025-11-29 01:43:20 - face_recog - INFO - Response: GET /favicon.ico - Status: 404 - Duration: 0.001s
+2025-11-29 01:44:10 - face_recog - INFO - ============================================================
+2025-11-29 01:44:10 - face_recog - INFO - ============================================================
+2025-11-29 01:44:10 - face_recog - INFO - ============================================================
+2025-11-29 01:44:10 - face_recog - INFO - ============================================================
+2025-11-29 01:44:22 - face_recog - INFO - Request: GET /docs - Client: 127.0.0.1
+2025-11-29 01:44:22 - face_recog - INFO - Response: GET /docs - Status: 404 - Duration: 0.001s
+2025-11-29 01:44:26 - face_recog - INFO - Request: GET /docs - Client: 127.0.0.1
+2025-11-29 01:44:26 - face_recog - INFO - Response: GET /docs - Status: 404 - Duration: 0.001s
+2025-11-29 01:44:26 - face_recog - INFO - Request: GET /docs - Client: 127.0.0.1
+2025-11-29 01:44:26 - face_recog - INFO - Response: GET /docs - Status: 404 - Duration: 0.001s
+2025-11-29 01:44:26 - face_recog - INFO - Request: GET /docs - Client: 127.0.0.1
+2025-11-29 01:44:26 - face_recog - INFO - Response: GET /docs - Status: 404 - Duration: 0.000s
+2025-11-29 01:44:26 - face_recog - INFO - Request: GET /docs - Client: 127.0.0.1
+2025-11-29 01:44:26 - face_recog - INFO - Response: GET /docs - Status: 404 - Duration: 0.001s
+2025-11-29 01:45:10 - face_recog - INFO - ============================================================
+2025-11-29 01:45:11 - face_recog - INFO - ============================================================
+2025-11-29 01:45:11 - face_recog - INFO - ============================================================
+2025-11-29 01:45:11 - face_recog - INFO - ============================================================
+2025-11-29 01:45:11 - face_recog - INFO - Request: GET /docs - Client: 127.0.0.1
+2025-11-29 01:45:11 - face_recog - INFO - Request: GET /docs - Client: 127.0.0.1
+2025-11-29 01:45:11 - face_recog - INFO - Response: GET /docs - Status: 307 - Duration: 0.003s
+2025-11-29 01:45:11 - face_recog - INFO - Response: GET /docs - Status: 307 - Duration: 0.002s
+2025-11-29 01:45:11 - face_recog - INFO - Request: GET /api/docs - Client: 127.0.0.1
+2025-11-29 01:45:11 - face_recog - INFO - Response: GET /api/docs - Status: 200 - Duration: 0.001s
+2025-11-29 01:45:11 - face_recog - INFO - Request: GET /api/docs - Client: 127.0.0.1
+2025-11-29 01:45:11 - face_recog - INFO - Response: GET /api/docs - Status: 200 - Duration: 0.001s
+2025-11-29 01:45:11 - face_recog - INFO - Request: GET /openapi.json - Client: 127.0.0.1
+2025-11-29 01:45:11 - face_recog - INFO - Response: GET /openapi.json - Status: 200 - Duration: 0.063s
+2025-11-29 01:45:11 - face_recog - INFO - Request: GET /openapi.json - Client: 127.0.0.1
+2025-11-29 01:45:11 - face_recog - INFO - Response: GET /openapi.json - Status: 200 - Duration: 0.001s
+2025-11-29 01:45:29 - face_recog - INFO - Request: GET / - Client: 127.0.0.1
+2025-11-29 01:45:29 - face_recog - INFO - Response: GET / - Status: 200 - Duration: 0.083s
