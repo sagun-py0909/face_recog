@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from pydantic_settings import BaseSettings
+from pydantic import BaseSettings
 from functools import lru_cache
 
 class Settings(BaseSettings):
@@ -36,6 +36,17 @@ class Settings(BaseSettings):
         env_file = ".env"
         case_sensitive = False
 
+
+def _normalize_database_url(url: str) -> str:
+    if url.startswith("postgresql://") and "+" not in url.split("://", 1)[0]:
+        return url.replace("postgresql://", "postgresql+pg8000://", 1)
+    if url.startswith("postgres://"):
+        return url.replace("postgres://", "postgresql+pg8000://", 1)
+    return url
+
+
 @lru_cache()
 def get_settings() -> Settings:
-    return Settings()
+    settings = Settings()
+    settings.database_url = _normalize_database_url(settings.database_url)
+    return settings

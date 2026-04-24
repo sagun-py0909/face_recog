@@ -14,7 +14,7 @@ class PersonResponse(PersonBase):
     created_at: datetime
     
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 # Attendance schemas
 class AttendanceResponse(BaseModel):
@@ -25,7 +25,7 @@ class AttendanceResponse(BaseModel):
     confidence_score: Optional[float]
     
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 # User schemas
 class UserBase(BaseModel):
@@ -42,7 +42,7 @@ class UserResponse(UserBase):
     created_at: datetime
     
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 class Token(BaseModel):
     access_token: str

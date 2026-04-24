@@ -1092,14 +1092,37 @@
 
         function closeModal(modalId) {
             document.getElementById(modalId).classList.remove('active');
+            if (modalId === 'addPersonModal') {
+                stopCamera();
+                resetAddPersonCapture();
+            }
         }
 
         // Camera functions
         let videoStream = null;
+        let capturedFrames = [];
+
+        function resetAddPersonCapture() {
+            capturedFrames = [];
+            const canvas = document.getElementById('photoCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width || 1, canvas.height || 1);
+        }
+
+        function stopCamera() {
+            if (videoStream) {
+                videoStream.getTracks().forEach(track => track.stop());
+                videoStream = null;
+            }
+            document.getElementById('videoPreview').srcObject = null;
+        }
+
         async function startCamera() {
             try {
                 videoStream = await navigator.mediaDevices.getUserMedia({ video: true });
-                document.getElementById('videoPreview').srcObject = videoStream;
+                const video = document.getElementById('videoPreview');
+                video.srcObject = videoStream;
+                await video.play();
             } catch (error) {
                 alert('Could not access camera: ' + error.message);
             }
@@ -1107,18 +1130,32 @@
 
         function capturePhoto() {
             const video = document.getElementById('videoPreview');
+            if (!video.srcObject) {
+                alert('Start camera first.');
+                return;
+            }
+            if (!video.videoWidth || !video.videoHeight) {
+                alert('Camera is still initializing. Try again in a second.');
+                return;
+            }
             const canvas = document.getElementById('photoCanvas');
             canvas.width = video.videoWidth;
             canvas.height = video.videoHeight;
             canvas.getContext('2d').drawImage(video, 0, 0);
+            const imageData = canvas.toDataURL('image/jpeg', 0.9);
+            capturedFrames = [imageData];
+            alert('Photo captured. Click Add Person to submit.');
         }
 
         // Add person form
         document.getElementById('addPersonForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const name = document.getElementById('personName').value;
-            const canvas = document.getElementById('photoCanvas');
-            const imageData = canvas.toDataURL('image/jpeg');
+
+            if (capturedFrames.length === 0) {
+                alert('Please capture a photo first.');
+                return;
+            }
 
             try {
                 const response = await fetch(`${API_BASE}/api/recognition/add-person`, {
@@ -1127,15 +1164,15 @@
                         'Authorization': `Bearer ${authToken}`,
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ name, image: imageData })
+                    body: JSON.stringify({ name, frames: capturedFrames })
                 });
 
                 if (response.ok) {
                     alert('Person added successfully!');
                     closeModal('addPersonModal');
-                    if (videoStream) {
-                        videoStream.getTracks().forEach(track => track.stop());
-                    }
+                    stopCamera();
+                    resetAddPersonCapture();
+                    document.getElementById('personName').value = '';
                     loadPeopleData();
                 } else {
                     const error = await response.json();

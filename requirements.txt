@@ -6,13 +6,13 @@ keras-facenet
 scikit-learn
 
 # Web framework
-fastapi
+fastapi==0.95.2
 uvicorn[standard]
 python-multipart
 
 # Database
 sqlalchemy
-psycopg2-binary
+pg8000
 alembic
 
 # Caching
@@ -25,7 +25,8 @@ passlib[bcrypt]
 python-dotenv
 
 # Settings management
-pydantic-settings
+pydantic==1.10.15
+email-validator
 
 # Legacy (keep for backward compatibility)
 flask

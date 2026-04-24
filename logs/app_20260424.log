@@ -1,0 +1,532 @@
+2026-04-24 09:50:54 - face_recog - INFO - ============================================================
+2026-04-24 09:50:54 - face_recog - INFO - ============================================================
+2026-04-24 09:50:54 - face_recog - INFO - ============================================================
+2026-04-24 09:50:54 - face_recog - INFO - ============================================================
+2026-04-24 09:50:55 - face_recog - INFO - Request: GET / - Client: 127.0.0.1
+2026-04-24 09:50:55 - face_recog - INFO - Response: GET / - Status: 200 - Duration: 0.001s
+2026-04-24 09:50:55 - face_recog - INFO - Request: GET /favicon.ico - Client: 127.0.0.1
+2026-04-24 09:50:55 - face_recog - INFO - Response: GET /favicon.ico - Status: 404 - Duration: 0.001s
+2026-04-24 09:51:33 - face_recog - INFO - Request: GET / - Client: 127.0.0.1
+2026-04-24 09:51:33 - face_recog - INFO - Response: GET / - Status: 200 - Duration: 0.001s
+2026-04-24 09:52:13 - face_recog - INFO - Request: GET /admin/ - Client: 127.0.0.1
+2026-04-24 09:52:13 - face_recog - INFO - Response: GET /admin/ - Status: 404 - Duration: 0.000s
+2026-04-24 09:52:17 - face_recog - INFO - Request: GET /admin - Client: 127.0.0.1
+2026-04-24 09:52:17 - face_recog - INFO - Response: GET /admin - Status: 404 - Duration: 0.001s
+2026-04-24 09:52:28 - face_recog - INFO - Request: GET /static/admin.html - Client: 127.0.0.1
+2026-04-24 09:52:28 - face_recog - INFO - Response: GET /static/admin.html - Status: 200 - Duration: 0.097s
+2026-04-24 09:52:34 - face_recog - INFO - Request: POST /api/auth/login - Client: 127.0.0.1
+2026-04-24 09:52:34 - face_recog - INFO - Response: POST /api/auth/login - Status: 200 - Duration: 0.335s
+2026-04-24 09:52:34 - face_recog - INFO - Request: GET /api/auth/me - Client: 127.0.0.1
+2026-04-24 09:52:34 - face_recog - INFO - Response: GET /api/auth/me - Status: 200 - Duration: 0.014s
+2026-04-24 09:52:34 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:52:34 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:52:35 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.046s
+2026-04-24 09:52:35 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.048s
+2026-04-24 09:52:35 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:52:35 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:52:35 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.014s
+2026-04-24 09:52:35 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.019s
+2026-04-24 09:52:38 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:52:38 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.008s
+2026-04-24 09:53:00 - face_recog - INFO - Request: POST /api/recognition/add-person - Client: 127.0.0.1
+2026-04-24 09:53:00 - face_recog - INFO - Response: POST /api/recognition/add-person - Status: 422 - Duration: 0.008s
+2026-04-24 09:53:13 - face_recog - INFO - Request: GET /static/admin.html - Client: 127.0.0.1
+2026-04-24 09:53:13 - face_recog - INFO - Response: GET /static/admin.html - Status: 304 - Duration: 0.003s
+2026-04-24 09:53:15 - face_recog - INFO - Request: POST /api/auth/login - Client: 127.0.0.1
+2026-04-24 09:53:16 - face_recog - INFO - Response: POST /api/auth/login - Status: 200 - Duration: 0.309s
+2026-04-24 09:53:16 - face_recog - INFO - Request: GET /api/auth/me - Client: 127.0.0.1
+2026-04-24 09:53:16 - face_recog - INFO - Response: GET /api/auth/me - Status: 200 - Duration: 0.007s
+2026-04-24 09:53:16 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:53:16 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:53:16 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.018s
+2026-04-24 09:53:16 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.019s
+2026-04-24 09:53:16 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:53:16 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:53:16 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.014s
+2026-04-24 09:53:16 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.013s
+2026-04-24 09:53:18 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:53:18 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.004s
+2026-04-24 09:53:30 - face_recog - INFO - Request: GET /.well-known/appspecific/com.chrome.devtools.json - Client: 127.0.0.1
+2026-04-24 09:53:30 - face_recog - INFO - Response: GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.001s
+2026-04-24 09:53:52 - face_recog - INFO - Request: POST /api/recognition/add-person - Client: 127.0.0.1
+2026-04-24 09:53:52 - face_recog - INFO - Response: POST /api/recognition/add-person - Status: 422 - Duration: 0.008s
+2026-04-24 09:54:26 - face_recog - INFO - Request: GET /static/admin.html - Client: 127.0.0.1
+2026-04-24 09:54:26 - face_recog - INFO - Response: GET /static/admin.html - Status: 304 - Duration: 0.002s
+2026-04-24 09:54:31 - face_recog - INFO - Request: POST /api/auth/login - Client: 127.0.0.1
+2026-04-24 09:54:31 - face_recog - INFO - Response: POST /api/auth/login - Status: 200 - Duration: 0.323s
+2026-04-24 09:54:31 - face_recog - INFO - Request: GET /api/auth/me - Client: 127.0.0.1
+2026-04-24 09:54:31 - face_recog - INFO - Response: GET /api/auth/me - Status: 200 - Duration: 0.005s
+2026-04-24 09:54:31 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:54:31 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:54:31 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.019s
+2026-04-24 09:54:31 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.018s
+2026-04-24 09:54:31 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:54:31 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:54:31 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.014s
+2026-04-24 09:54:31 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.014s
+2026-04-24 09:54:32 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:54:32 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.008s
+2026-04-24 09:55:26 - face_recog - INFO - ============================================================
+2026-04-24 09:55:26 - face_recog - INFO - ============================================================
+2026-04-24 09:55:27 - face_recog - INFO - ============================================================
+2026-04-24 09:55:27 - face_recog - INFO - ============================================================
+2026-04-24 09:55:29 - face_recog - INFO - Request: GET /static/admin.html - Client: 127.0.0.1
+2026-04-24 09:55:29 - face_recog - INFO - Response: GET /static/admin.html - Status: 200 - Duration: 0.068s
+2026-04-24 09:55:35 - face_recog - INFO - Request: POST /api/auth/login - Client: 127.0.0.1
+2026-04-24 09:55:35 - face_recog - INFO - Response: POST /api/auth/login - Status: 200 - Duration: 0.331s
+2026-04-24 09:55:35 - face_recog - INFO - Request: GET /api/auth/me - Client: 127.0.0.1
+2026-04-24 09:55:35 - face_recog - INFO - Response: GET /api/auth/me - Status: 200 - Duration: 0.011s
+2026-04-24 09:55:35 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:55:35 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:55:35 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.056s
+2026-04-24 09:55:35 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.056s
+2026-04-24 09:55:35 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:55:35 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:55:35 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.019s
+2026-04-24 09:55:35 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.019s
+2026-04-24 09:55:37 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:55:37 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.006s
+2026-04-24 09:55:45 - face_recog - INFO - Request: POST /api/recognition/add-person - Client: 127.0.0.1
+2026-04-24 09:55:48 - face_recog - INFO - Response: POST /api/recognition/add-person - Status: 200 - Duration: 3.422s
+2026-04-24 09:55:48 - face_recog - INFO - Request: POST /api/recognition/add-person - Client: 127.0.0.1
+2026-04-24 09:55:48 - face_recog - INFO - Response: POST /api/recognition/add-person - Status: 400 - Duration: 0.021s
+2026-04-24 09:55:51 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:55:51 - face_recog - ERROR - Global exception: unhandled errors in a TaskGroup (1 sub-exception)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 132, in receive
+    |     raise EndOfStream from None
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\yugaas\face_recog\app\core\logger.py", line 77, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 83, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 222, in __aexit__
+    |     await self.gen.athrow(typ, value, traceback)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\concurrency.py", line 36, in contextmanager_in_threadpool
+    |     raise e
+    | pydantic.error_wrappers.ValidationError: 1 validation error for PersonResponse
+    | response -> 0
+    |   value is not a valid dict (type=type_error.dict)
+    +------------------------------------
+2026-04-24 09:55:55 - face_recog - INFO - Request: GET /static/admin.html - Client: 127.0.0.1
+2026-04-24 09:55:55 - face_recog - INFO - Response: GET /static/admin.html - Status: 304 - Duration: 0.000s
+2026-04-24 09:55:57 - face_recog - INFO - Request: POST /api/auth/login - Client: 127.0.0.1
+2026-04-24 09:55:58 - face_recog - INFO - Response: POST /api/auth/login - Status: 200 - Duration: 0.331s
+2026-04-24 09:55:58 - face_recog - INFO - Request: GET /api/auth/me - Client: 127.0.0.1
+2026-04-24 09:55:58 - face_recog - INFO - Response: GET /api/auth/me - Status: 200 - Duration: 0.005s
+2026-04-24 09:55:58 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:55:58 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:55:58 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.021s
+2026-04-24 09:55:58 - face_recog - ERROR - Global exception: unhandled errors in a TaskGroup (1 sub-exception)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 132, in receive
+    |     raise EndOfStream from None
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\yugaas\face_recog\app\core\logger.py", line 77, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 83, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 222, in __aexit__
+    |     await self.gen.athrow(typ, value, traceback)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\concurrency.py", line 36, in contextmanager_in_threadpool
+    |     raise e
+    | pydantic.error_wrappers.ValidationError: 1 validation error for PersonResponse
+    | response -> 0
+    |   value is not a valid dict (type=type_error.dict)
+    +------------------------------------
+2026-04-24 09:55:58 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:55:58 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.009s
+2026-04-24 09:55:58 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:55:58 - face_recog - ERROR - Global exception: unhandled errors in a TaskGroup (1 sub-exception)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 132, in receive
+    |     raise EndOfStream from None
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\yugaas\face_recog\app\core\logger.py", line 77, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 83, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 222, in __aexit__
+    |     await self.gen.athrow(typ, value, traceback)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\concurrency.py", line 36, in contextmanager_in_threadpool
+    |     raise e
+    | pydantic.error_wrappers.ValidationError: 1 validation error for PersonResponse
+    | response -> 0
+    |   value is not a valid dict (type=type_error.dict)
+    +------------------------------------
+2026-04-24 09:55:59 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:55:59 - face_recog - ERROR - Global exception: unhandled errors in a TaskGroup (1 sub-exception)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 132, in receive
+    |     raise EndOfStream from None
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\yugaas\face_recog\app\core\logger.py", line 77, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 83, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 222, in __aexit__
+    |     await self.gen.athrow(typ, value, traceback)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\concurrency.py", line 36, in contextmanager_in_threadpool
+    |     raise e
+    | pydantic.error_wrappers.ValidationError: 1 validation error for PersonResponse
+    | response -> 0
+    |   value is not a valid dict (type=type_error.dict)
+    +------------------------------------
+2026-04-24 09:56:22 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:56:22 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:56:22 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.021s
+2026-04-24 09:56:22 - face_recog - ERROR - Global exception: unhandled errors in a TaskGroup (1 sub-exception)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 132, in receive
+    |     raise EndOfStream from None
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\yugaas\face_recog\app\core\logger.py", line 77, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 83, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 222, in __aexit__
+    |     await self.gen.athrow(typ, value, traceback)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\concurrency.py", line 36, in contextmanager_in_threadpool
+    |     raise e
+    | pydantic.error_wrappers.ValidationError: 1 validation error for PersonResponse
+    | response -> 0
+    |   value is not a valid dict (type=type_error.dict)
+    +------------------------------------
+2026-04-24 09:56:24 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:56:24 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.007s
+2026-04-24 09:56:32 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:56:32 - face_recog - ERROR - Global exception: unhandled errors in a TaskGroup (1 sub-exception)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 132, in receive
+    |     raise EndOfStream from None
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\yugaas\face_recog\app\core\logger.py", line 77, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 83, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 222, in __aexit__
+    |     await self.gen.athrow(typ, value, traceback)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\concurrency.py", line 36, in contextmanager_in_threadpool
+    |     raise e
+    | pydantic.error_wrappers.ValidationError: 1 validation error for PersonResponse
+    | response -> 0
+    |   value is not a valid dict (type=type_error.dict)
+    +------------------------------------
+2026-04-24 09:56:46 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:56:46 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.006s
+2026-04-24 09:56:52 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:56:52 - face_recog - ERROR - Global exception: unhandled errors in a TaskGroup (1 sub-exception)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 132, in receive
+    |     raise EndOfStream from None
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\yugaas\face_recog\app\core\logger.py", line 77, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 83, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 222, in __aexit__
+    |     await self.gen.athrow(typ, value, traceback)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\concurrency.py", line 36, in contextmanager_in_threadpool
+    |     raise e
+    | pydantic.error_wrappers.ValidationError: 1 validation error for PersonResponse
+    | response -> 0
+    |   value is not a valid dict (type=type_error.dict)
+    +------------------------------------
+2026-04-24 09:56:56 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:56:56 - face_recog - ERROR - Global exception: unhandled errors in a TaskGroup (1 sub-exception)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 132, in receive
+    |     raise EndOfStream from None
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\yugaas\face_recog\app\core\logger.py", line 77, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 83, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 222, in __aexit__
+    |     await self.gen.athrow(typ, value, traceback)
+    |   File "C:\Users\sagun\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\concurrency.py", line 36, in contextmanager_in_threadpool
+    |     raise e
+    | pydantic.error_wrappers.ValidationError: 1 validation error for PersonResponse
+    | response -> 0
+    |   value is not a valid dict (type=type_error.dict)
+    +------------------------------------
+2026-04-24 09:57:21 - face_recog - INFO - ============================================================
+2026-04-24 09:57:21 - face_recog - INFO - ============================================================
+2026-04-24 09:57:21 - face_recog - INFO - ============================================================
+2026-04-24 09:57:21 - face_recog - INFO - ============================================================
+2026-04-24 09:57:21 - face_recog - INFO - Request: GET /static/admin.html - Client: 127.0.0.1
+2026-04-24 09:57:21 - face_recog - INFO - Response: GET /static/admin.html - Status: 304 - Duration: 0.034s
+2026-04-24 09:57:26 - face_recog - INFO - Request: POST /api/auth/login - Client: 127.0.0.1
+2026-04-24 09:57:27 - face_recog - INFO - Response: POST /api/auth/login - Status: 200 - Duration: 0.327s
+2026-04-24 09:57:27 - face_recog - INFO - Request: GET /api/auth/me - Client: 127.0.0.1
+2026-04-24 09:57:27 - face_recog - INFO - Response: GET /api/auth/me - Status: 200 - Duration: 0.012s
+2026-04-24 09:57:27 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:57:27 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:57:27 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.044s
+2026-04-24 09:57:27 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.043s
+2026-04-24 09:57:27 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:57:27 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:57:27 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.018s
+2026-04-24 09:57:27 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.018s
+2026-04-24 09:57:27 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:57:27 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.010s
+2026-04-24 09:57:30 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:57:30 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.007s
+2026-04-24 09:57:32 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:57:32 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.010s
+2026-04-24 09:57:33 - face_recog - INFO - Request: GET /api/recognition/people - Client: 127.0.0.1
+2026-04-24 09:57:33 - face_recog - INFO - Response: GET /api/recognition/people - Status: 200 - Duration: 0.015s
+2026-04-24 09:57:33 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:57:33 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.009s
+2026-04-24 09:57:54 - face_recog - INFO - Request: GET /static/index_old.html - Client: 127.0.0.1
+2026-04-24 09:57:54 - face_recog - INFO - Response: GET /static/index_old.html - Status: 200 - Duration: 0.002s
+2026-04-24 09:58:02 - face_recog - INFO - Request: POST /api/recognition/checkin - Client: 127.0.0.1
+2026-04-24 09:58:05 - face_recog - INFO - Response: POST /api/recognition/checkin - Status: 200 - Duration: 3.263s
+2026-04-24 09:58:05 - face_recog - INFO - Request: POST /api/recognition/checkin - Client: 127.0.0.1
+2026-04-24 09:58:06 - face_recog - INFO - Response: POST /api/recognition/checkin - Status: 200 - Duration: 0.144s
+2026-04-24 09:58:12 - face_recog - INFO - Request: POST /api/recognition/checkin - Client: 127.0.0.1
+2026-04-24 09:58:12 - face_recog - INFO - Response: POST /api/recognition/checkin - Status: 200 - Duration: 0.136s
+2026-04-24 09:58:13 - face_recog - INFO - Request: POST /api/recognition/checkin - Client: 127.0.0.1
+2026-04-24 09:58:13 - face_recog - INFO - Response: POST /api/recognition/checkin - Status: 200 - Duration: 0.146s
+2026-04-24 09:58:13 - face_recog - INFO - Request: POST /api/recognition/checkin - Client: 127.0.0.1
+2026-04-24 09:58:13 - face_recog - INFO - Response: POST /api/recognition/checkin - Status: 200 - Duration: 0.151s
+2026-04-24 09:58:13 - face_recog - INFO - Request: POST /api/recognition/checkin - Client: 127.0.0.1
+2026-04-24 09:58:14 - face_recog - INFO - Response: POST /api/recognition/checkin - Status: 200 - Duration: 0.152s
+2026-04-24 09:58:14 - face_recog - INFO - Request: POST /api/recognition/checkin - Client: 127.0.0.1
+2026-04-24 09:58:14 - face_recog - INFO - Response: POST /api/recognition/checkin - Status: 200 - Duration: 0.142s
+2026-04-24 09:58:16 - face_recog - INFO - Request: GET /.well-known/appspecific/com.chrome.devtools.json - Client: 127.0.0.1
+2026-04-24 09:58:16 - face_recog - INFO - Response: GET /.well-known/appspecific/com.chrome.devtools.json - Status: 404 - Duration: 0.001s
+2026-04-24 09:58:39 - face_recog - INFO - Request: POST /api/auth/login - Client: 127.0.0.1
+2026-04-24 09:58:39 - face_recog - INFO - Response: POST /api/auth/login - Status: 200 - Duration: 0.310s
+2026-04-24 09:58:49 - face_recog - INFO - Request: POST /api/recognition/add-person - Client: 127.0.0.1
+2026-04-24 09:58:50 - face_recog - INFO - Response: POST /api/recognition/add-person - Status: 200 - Duration: 0.433s
+2026-04-24 09:58:54 - face_recog - INFO - Request: POST /api/recognition/checkin - Client: 127.0.0.1
+2026-04-24 09:58:54 - face_recog - INFO - Response: POST /api/recognition/checkin - Status: 200 - Duration: 0.153s
+2026-04-24 09:58:58 - face_recog - INFO - Request: GET /api/recognition/attendance - Client: 127.0.0.1
+2026-04-24 09:58:58 - face_recog - INFO - Response: GET /api/recognition/attendance - Status: 200 - Duration: 0.029s
+2026-04-24 09:59:05 - face_recog - INFO - Request: POST /api/recognition/checkin - Client: 127.0.0.1
+2026-04-24 09:59:05 - face_recog - INFO - Response: POST /api/recognition/checkin - Status: 200 - Duration: 0.170s
